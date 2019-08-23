@@ -1,0 +1,21 @@
+@startuml
+
+title segregation
+
+A ..> "依赖" Interface1
+note left of A: 1.A通过Interface1会依赖B,但只会用到接口的1,2,3三个方法
+B ..|> "实现" Interface1
+
+
+interface Interface1{
+    operation1():void
+    operation2():void
+    operation3():void
+    operation4():void
+}
+
+C .up.> "依赖" Interface1
+note left of C:C通过Interface1会依赖D,但只会用到1,4,5三个方法
+D .up.|> "实现" Interface1
+
+@enduml
