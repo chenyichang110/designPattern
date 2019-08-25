@@ -1,0 +1,27 @@
+@startuml
+
+Circle <-- GraphicEdito
+Shape <-- GraphicEdito
+Rectangle <-- GraphicEdito
+
+shape <|-- Rectangle
+shape <|-- Circle
+
+
+class GraphicEdito{
+    void drawCircle();
+    void drawRetangle();
+    void drawShape();
+}
+
+
+class Shape{
+}
+class Rectangle{
+}
+class Circle{
+}
+
+
+
+@enduml
