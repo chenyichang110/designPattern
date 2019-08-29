@@ -1,0 +1,16 @@
+
+@startuml
+
+Class01 <|-- Class02 : 继承
+
+Class011 <|.. Class021 : 实现
+
+Class03 *-- Class04 :组合
+
+Class05 o-- Class06 : 聚合
+
+Class07 .. Class08
+
+Class09 -- Class10 :关联
+
+@enduml
