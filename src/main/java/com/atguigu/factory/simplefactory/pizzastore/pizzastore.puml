@@ -1,0 +1,17 @@
+@startuml
+
+class Pizza{
+void prepare();
+void bake();
+void cut();
+void box();
+}
+
+class CheessPizza extends Pizza{
+}
+class GreekPizza extends Pizza{
+}
+class ChinaPizza extends Pizza{
+}
+
+@enduml
