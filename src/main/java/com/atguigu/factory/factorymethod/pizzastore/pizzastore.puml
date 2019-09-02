@@ -1,0 +1,36 @@
+@startuml
+class Pizza{
+    void prepare();
+    void bake();
+    void cut();
+    void box();
+}
+class OrderPizza{
+
+}
+class BJCheessPizza extends Pizza{
+
+}
+
+class LDCheessPizza extends Pizza{
+
+}
+class BJPepperPizza extends Pizza{
+
+}
+class LDPepperPizza extends Pizza{
+}
+
+class BJOrderPizza extends OrderPizza{
+}
+
+class LDOrderPizza extends OrderPizza{
+}
+
+BJCheessPizza <.. BJOrderPizza
+BJPepperPizza <.. BJOrderPizza
+
+LDCheessPizza <.. LDOrderPizza
+LDPepperPizza <.. LDOrderPizza
+
+@enduml
