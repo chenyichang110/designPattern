@@ -1,0 +1,36 @@
+@startuml
+class Pizza{
+    void prepare();
+    void bake();
+    void cut();
+    void box();
+}
+abstract class AbsFactory{
+
+}
+class BJCheessPizza extends Pizza{
+
+}
+
+class LDCheessPizza extends Pizza{
+
+}
+class BJPepperPizza extends Pizza{
+
+}
+class LDPepperPizza extends Pizza{
+}
+
+class BJFactory extends AbsFactory{
+}
+
+class LDFactory extends AbsFactory{
+}
+
+BJCheessPizza <.. BJFactory
+BJPepperPizza <.. BJFactory
+
+LDCheessPizza <.. LDFactory
+LDPepperPizza <.. LDFactory
+
+@enduml
