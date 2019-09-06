@@ -1,0 +1,30 @@
+@startuml
+
+class HouseBuilder{
+ - House house;
+ void buildBasic();
+ void buildWalls();
+ void roofed();
+ House build();
+}
+class HouseDirector{
+   +House building(HouseBuilder houseBuilder);
+}
+
+HouseBuilder *-right- House
+
+HouseDirector o-- HouseBuilder
+
+HouseBuilder<|-- CommonHouse
+HouseBuilder<|-- HighBuilding
+HouseBuilder<|-- OtherHouse
+
+Client ..> HouseDirector
+Client ..> CommonHouse
+Client ..> HighBuilding
+Client ..> OtherHouse
+
+
+
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+abstract class AbstractHouse{
+    void buildBasic();
+    void buildWalls();
+    void roofed();
+    void build();
+}
+class CommonHouse extends AbstractHouse{
+
+}
+class HighBuilding extends AbstractHouse{
+
+}
+
+class Client{
+
+}
+
+CommonHouse <.. Client
+HighBuilding <.. Client
+
+
+@enduml
