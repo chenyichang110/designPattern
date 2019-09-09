@@ -1,0 +1,16 @@
+@startuml
+
+class Phone{
+    -Brand brand;
+}
+interface Brand{
+    void call();
+}
+Phone <.down. Client
+Brand <.down. Client
+
+Phone <|-- FoldedPhone
+Phone <|-- UpRightPhone
+Brand <|-- Vivo
+Brand <|-- XiaoMi
+@enduml
