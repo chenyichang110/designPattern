@@ -20,5 +20,12 @@ public class CoffeeClient {
         System.out.println(drink);
         System.out.println(drink.getDescAll() + drink.cost());
 
+        System.out.println("===========");
+        //参考InputStream
+
+        // 如果单点一份巧克力
+        Drink drink1 = new Chocolate(null);
+        System.out.println(drink1);
+        System.out.println(drink1.getDescAll() + drink1.cost());
     }
 }
