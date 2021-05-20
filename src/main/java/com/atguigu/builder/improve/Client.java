@@ -9,5 +9,8 @@ public class Client {
 
         House highBuilding = houseDirector.buildHouse(new HighBuilding());
         System.out.println(highBuilding);
+
+
+
     }
 }

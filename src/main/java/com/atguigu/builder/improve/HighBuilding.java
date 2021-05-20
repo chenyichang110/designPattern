@@ -3,7 +3,7 @@ package com.atguigu.builder.improve;
 public class HighBuilding extends HouseBuilder {
     @Override
     public void buildBasic() {
-        super.house.setBaise("高楼的打地基100米");
+        super.house.setBasie("高楼的打地基100米");
     }
 
     @Override

@@ -3,7 +3,7 @@ package com.atguigu.builder.improve;
 public class CommonHouse extends HouseBuilder {
     @Override
     public void buildBasic() {
-        super.house.setBaise("普通房子打地基5米");
+        super.house.setBasie("普通房子打地基5米");
     }
 
     @Override

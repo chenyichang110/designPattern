@@ -8,7 +8,7 @@ import lombok.ToString;
 @ToString
 public class House {
     //地基
-    private String baise;
+    private String basie;
     //砌墙
     private String wall;
     //封顶
