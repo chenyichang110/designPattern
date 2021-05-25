@@ -1,5 +1,8 @@
 package com.atguigu.composite;
 
+/**
+ * 组合模式
+ */
 public class Client {
     public static void main(String[] args) {
         //创建大学
